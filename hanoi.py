@@ -4,7 +4,7 @@ def TowerOfHanoi(n , source, auxiliary, destination):
 		return
 	TowerOfHanoi(n-1, source, destination, auxiliary)
 	print ("Move disk",n,"from source",source,"to destination",destination)
-	TowerOfHanoi(n-1, auxiliary, destination, source)
+	TowerOfHanoi(n-1, auxiliary, source, destination)
 		
 
 n = 3

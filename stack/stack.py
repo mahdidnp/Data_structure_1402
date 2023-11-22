@@ -12,3 +12,10 @@ class stack():
             return True
         else:
             return False
+        
+    def push(self,item):
+        self.stack.append(item)
+
+    def peek(self):
+        if not self.is_empty():
+            return self.stack[-1]
